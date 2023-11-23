@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Fungsi dan Pengertian Array - JokikuDondon</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="assets/css/styles1.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bolder" href="index.html">JokikuDondon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Array Lanjutan Dua Dimensi</h1>
+                        <!-- Post meta content-->
+                        <div class="text-muted fst-italic mb-2">Diposting pada 25 Okt 2023, Doni Wahyono</div>
+                        <!-- Post categories-->
+                        <a class="badge bg-primary text-decoration-none link-light" href="#!">#Struktur Data</a>
+                        <a class="badge bg-primary text-decoration-none link-light" href="#!">#Tipe Data</a>
+                        <a class="badge bg-primary text-decoration-none link-light" href="#!">#Array</a>
+                    </header>
+                    <!-- Preview image figure-->
+                    <figure class="mb-4"><img class="img-fluid rounded"
+                            src="https://www.gamelab.id/uploads/modules/MARKETING/Teknologi%20Digital%20-%20GAMELAB.ID%20(3).jpg?1676969394592"
+                            alt="..." /></figure>
+                    <!-- Post content-->
+                    <section class="mb-5">
+                        <p class="fs-5 mb-4">
+                            Setelah belajar tentang array dan pengertian nya, disini kita akan melanjutkan pembelajaran
+                            materi array pada materi <span class="fw-bolder">Array Lanjutan Dua Dimensi</span>. Jika
+                            kalian belum mengenal apa itu array lebih baik belajar mengenai array pada tutorial <a
+                                href="array.html">Fungsi dan Pengertian Array</a>
+                        </p>
+                        <p class="fs-5 mb-4">
+                            Pemahaman tentang tipe data array sangat penting terutama bagi Anda yang sedang belajar
+                            bahasa pemrograman untuk menjadi seorang programmer.
+                            Dengan mengetahui tipe data array, anda dapat menganalisis informasi atau data yang Anda
+                            dapatkan dan memilih tipe data yang tepat untuk menyimpan data tersebut.
+                        </p>
+                        <!-- <img src="assets/images/td_sederhana.jpg" width="600px" height="400px" alt="Tipe Data Sederhana"> -->
+                        <h2 class="fw-bolder mb-4 mt-5">Pengertian Array Dua Dimensi</h2>
+                        <p class="fs-5 mb-4">
+                            Array Dua Dimensi merupakan tipe data yang memakai dua elemen jadi Anda bisa memasukkan dua
+                            elemen sekaligus. Umumnya, jenis data Dua Dimensi ini memiliki fungsi untuk menampilkan
+                            sebuah data yang memiliki dua jenis elemen secara berbeda. Contohnya adalah Anda ingin
+                            menampilkan data jumlah siswa dan jumlah bangku di sebuah kelas. Maka, data yang ditampilkan
+                            adalah elemen jumlah siswa dan jumlah bangku siswa di sebuah kelas.
+                        </p>
+                        <h2 class="fw-bolder mb-4 mt-5">Pendeklarasian Array Dua Dimensi</h2>
+                        <p class="fs-5 mb-4">
+                            Untuk mendeklarasikan sebuah array Dua Dimensi dalam C++, sobat dondon harus menggunakan
+                            tanda [ ]
+                            (bracket). Adapun bentuk umum dari pendeklarasian array Dua Dimensi adalah sebagai berikut:
+                            <br><br> tipe_data nama_variable [jumlah_elemen_baris] [jumlah_elemen_kolom] <br><br>Sebagai
+                            contoh misal kita ingin mendeklarasikan sebuah array Dua Dimensi (misalnya dengan variabel
+                            A) yang mempunyai jumlah elemen baris sebanyak 3, jumlah elemen kolom sebanyak 5 dan
+                            array A memiliki tipe data int, maka bentuk array nya adalah sebagai berikut: <br><br> int
+                            A[3][5]; <br><br>Seandainya array A akan kita beri nilai saat pendeklarasian
+                            (inisialisasi), maka contoh penulisannya dapat ditulis sebagai berikut: <br><br> int A[3][5]
+                            = {{ 1,2,3,4,5 }, {6,7,8,9,10}, {11,12,13,14,15 }};
+                            <br><br> Dari pendeklarasian sekaligus inisialisasi array A diatas, dapat diartikan
+                            bahwa kita telah memesan tempat pada memori komputer sebanyak 15 tempat, dengan indeks dari
+                            A[0][0] sampai A[2][4], dimana nilai - nilai akan dimasukkan ke elemen array secara
+                            berturut - turut, mulai dari A[0][0] akan di isi dengan nilai '1' sampai A[2][4]
+                            yang di isi dengan nilai '15'.
+                            <img src="assets/images/array_2_visualisasi.png" alt="Visualisasi Array"
+                                width="600px"><br><br> Contoh aplikasi untuk array Dua Dimensi adalah seperti program
+                            input IPK mahasiswa dengan hasil output seperti berikut : <br><br> <img
+                                src="assets/images/data_array2.png" alt="Contoh Data Array 2" width="400px">
+                        </p>
+                        <h2 class="fw-bolder mb-4 mt-5">Mengakses Array Dua Dimensi</h2>
+                        <p class="fs-5 mb-4">
+                            Cara yang digunakan untuk mengakses elemen array dua dimensi adalah dengan menuliskan indeks
+                            baris dan kolom nya. Misalnya pada array A diatas kita ingin mengakses nilai '8' yang
+                            terdapat pada indeks baris ke 1 dan indeks kolom ke 2, kemudian menampung nilai tersebut
+                            kedalam sebuah variabel yang bertipe int (misal int simpan), maka kita perlu menuliskan
+                            kode programnya seperti berikut ini: <br><br> simpan = A[1][2]; <br><br> * Perlu sobat
+                            dondon ingat
+                            meskipun array A memiliki jumlah elemen baris sebanyak 3 dan jumlah elemen kolom
+                            sebanyak 5 atau di deklarasikan sebagai berikut : "A [3][5];". namun karena indeks array
+                            selalu dimulai dari 0 maka untuk mengakses elemen terakhir dari array A, kita dapat
+                            mengaksesnya dengan menuliskan A[2][4] bukan A[3][5].
+                        </p>
+                        <h2 class="fw-bolder mb-4 mt-5">Menentukan Jumlah Elemen Array Dua Dimensi</h2>
+                        <p class="fs-5 mb-4">
+                            <img src="assets/images/penetuan_elemen_array2.png" alt="Penentuan Elemen Array 2"
+                                width="400px"> <br><br> Contoh : <br> Suatu Array X dideklarasikan dengan int X[4][3];
+                            maka jumlah elemen array tersebut adalah : <br><br> (4) * (3) = 12 <br><br> Terbagi dua cara
+                            pandang (representasi) yang berbeda : <br><br> <img src="assets/images/mapping_array_2.png"
+                                alt="Mapping Array 2" width="500px"> <br><br> Keterangan : <br>@M[i][j] = Posisi Array
+                            yg dicari, M[0][0] = Posisi alamat awal index array, <br>i = Baris, <br>j = Kolom, <br>L =
+                            Ukuran memory type data, <br>K = Banyaknya elemen per kolom, <br>N = Banyaknya elemen per
+                            baris <br><br> <span class="fw-bolder">Penggambaran Secara Logika</span> <br><br> <img
+                                src="assets/images/penggambaran_logika_array2.png" alt="penggambaran_logika_array2">
+                            <br><br> <span class="fw-bolder">Contoh Pemetaan</span><br><br>
+                            <img src="assets/images/contoh_pemetaan_array2.png" alt="contoh_pemetaan_array2"
+                                width="800px"> <br><br> <img src="assets/images/penyelesaian_array2.png"
+                                alt="penyelesaian_array2" width="400px">
+                        </p>
+                        <h2 class="fw-bolder mb-4 mt-5">Program Array Dua Dimensi Dalam C++</h2>
+                        <p class="fs-5 mb-4">
+                            Berikut ini adalah contoh program sederhana menampilkan matrik ordo 3x2, dimana program ini
+                            menggunakan Array Dua Dimensi. <br><br>
+                            <div class="card">
+                                <blockquote>
+                                    <font color="#339900">#include&nbsp;&lt;iostream&gt;</font><br />
+                                    &nbsp;<br />
+                                    <font color="#0000ff">using</font>&nbsp;<font color="#0000ff">namespace</font>
+                                    &nbsp;std<font color="#008080">;</font><br />
+                                    &nbsp;<br />
+                                    <font color="#0000ff">int</font>&nbsp;main<font color="#008000">&#40;</font>
+                                    <font color="#008000">&#41;</font>
+                                    <font color="#008000">&#123;</font><br />
+                                    &nbsp;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#666666">
+                                        //&nbsp;Deklarasi&nbsp;dan&nbsp;inisialisasi&nbsp;array&nbsp;dua&nbsp;dimensi
+                                    </font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#666666">
+                                        //&nbsp;Dengan&nbsp;jumlah&nbsp;elemen&nbsp;baris&nbsp;=&nbsp;3</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#666666">
+                                        //&nbsp;dan&nbsp;jumlah&nbsp;elemen&nbsp;kolom&nbsp;=&nbsp;2</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">int</font>
+                                    &nbsp;matrikcontoh&nbsp;<font color="#008000">&#91;</font>
+                                    <font color="#0000dd">3</font>
+                                    <font color="#008000">&#93;</font>
+                                    <font color="#008000">&#91;</font>
+                                    <font color="#0000dd">2</font>
+                                    <font color="#008000">&#93;</font>&nbsp;<font color="#000080">=</font>&nbsp;<font
+                                        color="#008000">&#123;</font>
+                                    <font color="#008000">&#123;</font>
+                                    <font color="#0000dd">1</font>,<font color="#0000dd">2</font>
+                                    <font color="#008000">&#125;</font>,<font color="#008000">&#123;</font>
+                                    <font color="#0000dd">3</font>,<font color="#0000dd">4</font>
+                                    <font color="#008000">&#125;</font>,<font color="#008000">&#123;</font>
+                                    <font color="#0000dd">5</font>,<font color="#0000dd">6</font>
+                                    <font color="#008000">&#125;</font>
+                                    <font color="#008000">&#125;</font>
+                                    <font color="#008080">;</font><br />
+                                    &nbsp;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#666666">
+                                        //&nbsp;Mendeklarasi&nbsp;variabel&nbsp;untuk</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#666666">//&nbsp;Indeks&nbsp;perulangan
+                                    </font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">int</font>&nbsp;i,j<font
+                                        color="#008080">;</font><br />
+                                    &nbsp;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000dd">cout</font>
+                                    <font color="#000080">&lt;&lt;</font>
+                                    <font color="#FF0000">&quot;<font color="#000099">\t</font>
+                                        ==============================&quot;</font>
+                                    <font color="#008080">;</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000dd">cout</font>
+                                    <font color="#000080">&lt;&lt;</font>
+                                    <font color="#FF0000">&quot;<font color="#000099">\n</font>
+                                        <font color="#000099">\t</font>
+                                        ===&nbsp;Tampil&nbsp;Matrik&nbsp;Ordo&nbsp;3x2&nbsp;===<font color="#000099">\n
+                                        </font>&quot;
+                                    </font>
+                                    <font color="#008080">;</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000dd">cout</font>
+                                    <font color="#000080">&lt;&lt;</font>
+                                    <font color="#FF0000">&quot;<font color="#000099">\t</font>
+                                        ==============================<font color="#000099">\n</font>
+                                        <font color="#000099">\n</font>&quot;
+                                    </font>
+                                    <font color="#008080">;</font><br />
+                                    &nbsp;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#666666">
+                                        //&nbsp;Menampilkan&nbsp;matrikcontoh</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000dd">cout</font>
+                                    <font color="#000080">&lt;&lt;</font>
+                                    <font color="#FF0000">&quot;<font color="#000099">\n</font>
+                                        Menampilkan&nbsp;matrikcontoh<font color="#000099">\n</font>&quot;</font>
+                                    <font color="#008080">;</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">for</font>
+                                    <font color="#008000">&#40;</font>i<font color="#000080">=</font>
+                                    <font color="#0000dd">0</font>
+                                    <font color="#008080">;</font>i<font color="#000080">&lt;</font>
+                                    <font color="#0000dd">3</font>
+                                    <font color="#008080">;</font>i<font color="#000040">++</font>
+                                    <font color="#008000">&#41;</font>
+                                    <font color="#008000">&#123;</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">
+                                        for</font>
+                                    <font color="#008000">&#40;</font>j<font color="#000080">=</font>
+                                    <font color="#0000dd">0</font>
+                                    <font color="#008080">;</font>j<font color="#000080">&lt;</font>
+                                    <font color="#0000dd">2</font>
+                                    <font color="#008080">;</font>j<font color="#000040">++</font>
+                                    <font color="#008000">&#41;</font>
+                                    <font color="#008000">&#123;</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <font color="#0000dd">cout</font>
+                                    <font color="#000080">&lt;&lt;</font>matrikcontoh<font color="#008000">&#91;</font>i
+                                    <font color="#008000">&#93;</font>
+                                    <font color="#008000">&#91;</font>j<font color="#008000">&#93;</font>
+                                    <font color="#000080">&lt;&lt;</font>
+                                    <font color="#FF0000">&quot;&nbsp;&quot;</font>
+                                    <font color="#008080">;</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008000">
+                                        &#125;</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000dd">
+                                        cout</font>
+                                    <font color="#000080">&lt;&lt;</font>endl<font color="#008080">;</font><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008000">&#125;</font><br />
+                                    &nbsp;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff">return</font>&nbsp;<font
+                                        color="#0000dd">0</font>
+                                    <font color="#008080">;</font><br />
+                                    <font color="#008000">&#125;</font>
+                                </blockquote>
+                            </div>
+                        </p>
+                        <h2 class="fw-bolder mb-4 mt-5">Lanjutan</h2>
+                        <p class="fs-5 mb-4">
+                            Sekian Artikel mengenai Array Lanjutan Dua Dimensi, Lengkap Contoh Program dan Penjelasan.
+                            semoga
+                            artikel ini dapat bermanfaat bagi sobat dondon baik untuk menambah ilmu, mengerjakan tugas,
+                            maupun
+                            untuk sekedar menambah wawasan tentang Array Dua Dimensi C++, Contoh array 2 dimensi c++
+                            sederhana, inisialisasi array dua dimensi dan Contoh Program Dengan Array Dua Dimensi C++.
+                            Akhir kata, Terimakasih atas kunjungannya.
+                        </p>
+                    </section>
+                </article>
+                <!-- Comments section-->
+                <section class="mb-5 justify-content-center">
+                    <h4 class="text-center mb-4">Diskusi</h4>
+                    <div class="card bg-light justify-content-center">
+                        <div class="card-body justify-content-center">
+                            <!-- Comment form-->
+                            <form class="mb-4"><textarea class="form-control" rows="3"
+                                    placeholder="Join the discussion and leave a comment!"></textarea></form>
+                            <!-- Comment with nested comments-->
+                            <div class="d-flex mb-4">
+                                <!-- Parent comment-->
+                                <div class="flex-shrink-0"><img class="rounded-circle" src="assets/images/una.jpg"
+                                        alt="Una" /></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">Nadya Khitna</div>
+                                    Awalnya pusing banget mikirin gimana alur Struktur Data tapi setelah ketemu
+                                    Dikelarin bisa dengan cepat mengerti.
+                                    <!-- Child comment 1-->
+                                    <div class="d-flex mt-4">
+                                        <div class="flex-shrink-0"><img class="rounded-circle"
+                                                src="assets/images/doni.jpg" alt="Doni Ganteng" /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">Doni Wahyono (author)</div>
+                                            Terimakasih banyak bebepku semoga bermanfaat
+                                        </div>
+                                    </div>
+                                    <!-- Child comment 2-->
+                                    <div class="d-flex mt-4">
+                                        <div class="flex-shrink-0"><img class="rounded-circle"
+                                                src="assets/images/una.jpg" alt="Una" /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">Nadya Khitna</div>
+                                            Uuuuu makin cayang dehhh
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single comment-->
+                            <div class="d-flex">
+                                <div class="flex-shrink-0"><img class="rounded-circle"
+                                        src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">Windi Melani</div>
+                                    Makasih sayang sangat berguna😊
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header fw-bolder">Tutorial Struktur Data</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ol class="mb-0">
+                                    <li><a href="struktur_data.html">Belajar Bareng Part 1:
+                                            Mengenal konsep Struktur Data</a></li>
+                                    <li><a href="algoritma.html">Belajar Bareng Part 2:
+                                            Mengenal Konsep Algoritma</a></li>
+                                    <li><a href="tipedata.html">Belajar Bareng Part 3:
+                                            Memahami Jenis Tipe Data</a></li>
+                                    <li><a href="array.html">Belajar Bareng 4:
+                                            Fungsi dan Pengertian Array</a></li>
+                                    <li><a href="array_dua.html">Belajar Bareng 5:
+                                            Array Lanjutan Dua Dimensi</a></li>
+                                    <li><a href="#">Belajar Bareng 6:
+                                            Array Lanjutan Tiga Dimensi</a></li>
+                                    <li><a href="k_bilangan.html">Belajar Bareng 7:
+                                            Sistem Konversi Dan Konversi Bilangan</a></li>
+                                    <li><a href="lat_array.html">Belajar Bareng 8:
+                                            Latihan Mapping Array Dimensi 1,2 dan 3</a></li>
+                                    <li><a href="#">Belajar Bareng 9:
+                                            Fungsi dan Pengertian Stack atau Tumpukan</a></li>
+                                    <li><a href="#">Belajar Bareng 10:
+                                            Fungsi dan Definisi Queue atau Antrian</a></li>
+                                    <li><a href="#">Belajar Bareng 11:
+                                            Fungsi dan Definisi Linked List</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Side Widget</div>
+                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores
+                        voluptatum debitis excepturi sequi consequatur assumenda ex maiores, dignissimos, vero officia
+                        minus cum.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-3 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">&copy; 2023 Doni Setiawan Wahyono</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
